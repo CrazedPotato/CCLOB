@@ -16,5 +16,5 @@ end
 function s.condition(e,c)
 	if c==nil then return true end
 	return Duel.GetLocationCount(c:GetControler(),LOCATION_MZONE)>0
-		and	Duel.IsExistingMatchingCard(aux.FilterFaceupFunction(s.filter),c:GetControler(),LOCATION_MZONE,0,1,nil)
+		and	Duel.IsExistingMatchingCard(aux.FaceupFilter(s.filter),c:GetControler(),LOCATION_MZONE,0,1,nil)
 end
