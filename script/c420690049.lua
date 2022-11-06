@@ -11,8 +11,7 @@ function s.initial_effect(c)
 	e1:SetOperation(s.op)
 	c:RegisterEffect(e1)
 end
-local SET_RED_EYES = 0x3b
-local SET_BLUE_EYES = 0xdd
+s.listed_series={SET_RED_EYES,SET_BLUE_EYES}
 function s.filter(c)
 	return c:IsSetCard(SET_RED_EYES) or c:IsSetCard(SET_BLUE_EYES)
 end
