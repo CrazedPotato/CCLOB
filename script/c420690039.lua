@@ -23,8 +23,7 @@ function s.initial_effect(c)
 	e2:SetOperation(s.op)
 	c:RegisterEffect(e2)
 end
-s.listed_series={0x691}
-local SET_M_WARRIOR = 0x691
+s.listed_series={SET_M_WARRIOR}
 function s.spcon(e,tp,eg,ep,ev,re,r,rp)
 	return e:GetHandler():IsReason(REASON_EFFECT)
 end
